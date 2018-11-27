@@ -15,12 +15,28 @@ Cas utile pour le CPNV : l&#39;accès aux documents présent sur les différents
 
 ## 3. Analyse des outils
 
-Analyse des deux outils utilisés
-
-
 ### 3.1 OpenVPN
 
+### 3.1.1 Description
+
+OpenVPN est un logiciel gratuit déveloper en 2001 par James Yonan
+
+Ce logiciel utilise de manière intensive la bibliotheque d'authentification **OpenSSL**. Il utilise également le protocole **SSLv3/TLSv1**.
+
+Il est disponible sur une multitude d'environement tels que Windows, Linux et Mac OS X.
+
+Il n'est par contre pas compatible avec **IPsec** ou d'autres logiciel VPN.
+
+Ci dessous un shema de connexion au serveur OpenVPN:
+
  ![](images\Layer-3-routing-diagram-1024x606.png)
+
+### 3.1.2 Avantages et inconvénients
+
+|Avantages|Inconvénients|
+|---------|-------------|
+|Gratuit|Incompatible avec d'autres logiciel VPN|
+|Haute disponibilité|-
 
 ### 3.2 SSTP
 
