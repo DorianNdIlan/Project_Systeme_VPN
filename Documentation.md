@@ -36,7 +36,7 @@ Notre sujet porte sur l'accès externe aux ressources d'entreprise, avec comme o
 
 ## 2. Analyse du contexte
 
-Le contexte est de mettre en place un système utile pour le CPNV. Notre sujet portant sur l'accès externe aux ressources d'une entreprise, le but est de pouvoir accéder à certaines ressources de l'entreprise via un VPN. Les ressources pouvant être accessible sont par exemple : des fichiers (partages), les applications ou tout autres ressources hébergées sur les serveurs de l'entreprise.
+Le contexte est de mettre en place un système utile pour le CPNV. Notre sujet portant sur l'accès externe aux ressources d'une entreprise, le but est de pouvoir accéder à certaines ressources de l'entreprise. Les ressources pouvant être accessible sont par exemple : des fichiers (partages), les applications ou tout autres ressources hébergées sur les serveurs de l'entreprise.
 Il existe divers moyens et méthodes d'accèder à ces ressources à distance, les outils que nous avons séléctionné sont diversifié sur les méthodes d'accès. Moyens d'accès pouvant être utilisé : VPN, FTP, HTTPS, SSH, SFTP.
 
 Cas utile pour le CPNV : l'accès aux documents présent sur les différents partages (Commun, Perso, etc…) depuis l'extérieur (ex. depuis chez soi) et de fournir les applications utiles pour le travail à distance.
@@ -71,7 +71,7 @@ Les outils que nous avons choisis sont les suivants :
 
 ### 4.1.1 Description
 
-OpenVPN est un logiciel gratuit développer en 2001 par James Yonan
+OpenVPN est un logiciel gratuit développé en 2001 par James Yonan
 
 Ce logiciel utilise de manière intensive la bibliothèque d’authentification OpenSSL. Il utilise également le protocole SSLv3/TLSv1.
 
@@ -162,7 +162,24 @@ Configuration :
 * Dossier des fichiers journaux : C:\Windows\NTDS
 * Dossier SYSVOL : C:\Windows\SYSVOL
 
-## 6. Matrice de décision
+## 6. Comparaisons
+
+### 6.1 Comparaison payants
+
+Parmis les produits payant, nous avons Centrify et Cerberus.
+
+Centrify et Cerberus sont globalement des produits très différents, Centrify offre beaucoup de fonctionnalitées mais plutôt axées sur la sécurité alors que Cerberus fournit un serveur FTP accessible par web (HTTP, HTTPS) ou client FTP.
+
+En terme de fonctionnalité Centrify ne correspond pas vraiment aux besoins, c'est pourquoi nous choisissons Cerberus qui lui fournit tous ce que l'on demande : partages de fichiers par FTP, connexion avec l'AD, gestion des droits et plusiuers méthodes d'accès.
+
+### 6.2 Comparaison gratuits
+
+Parmis les produits gratuit, nous avons SSTP et OpenVPN.
+
+
+### 6.3 Comparaison global
+
+#### 6.3.1 Matrice de décision
 
 **Matrice :**  
 
